@@ -2,7 +2,10 @@
 
 echo "Welcome to the flipcoin problem"
 
-Coin=$(( RANDOM%2 ))
+for((i=0;i<=10;i++))
+do
+
+ 	Coin=$(( RANDOM%2 ))
 
       	if [ $Coin -eq 0 ]
 	then
@@ -10,4 +13,5 @@ Coin=$(( RANDOM%2 ))
 
 	else
 		echo "Coin is Tail"
-fi
+	fi
+done
